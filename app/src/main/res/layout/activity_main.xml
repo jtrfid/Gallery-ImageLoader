@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/id_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"/>
+    </FrameLayout>
+
+    <com.yetwish.horizatalscrollviewdemo.widget.MyHorizontalScrollView
+        android:id="@+id/slide_gallery"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="@dimen/gallery_width"
+            android:layout_height="@dimen/gallery_height"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </com.yetwish.horizatalscrollviewdemo.widget.MyHorizontalScrollView>
+
+    <com.yetwish.horizatalscrollviewdemo.widget.MyHorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:id="@+id/click_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+
+            android:layout_width="@dimen/gallery_width"
+            android:layout_height="@dimen/gallery_height"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </com.yetwish.horizatalscrollviewdemo.widget.MyHorizontalScrollView>
+</LinearLayout>
